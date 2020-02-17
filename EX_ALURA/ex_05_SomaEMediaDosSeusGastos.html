@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+	//Declarar variáveis
+	var nome, media, gasto1, gasto2, gasto3, gasto4, totalGastos;
+
+	//Atribuir variáveis
+	nome = prompt("Digite seu nome: ");
+	gasto1 = parseFloat(prompt("Digite seus gastos: "));
+	gasto2 = parseFloat(prompt("Digite seus gastos: "));
+	gasto3 = parseFloat(prompt("Digite seus gastos: "));
+	gasto4 = parseFloat(prompt("Digite seus gastos: "));
+
+	//Processamento
+	totalGastos = (gasto1 + gasto2 + gasto3 + gasto4);
+	media = (totalGastos/4);
+
+	//Saida
+	document.write(`Olá, ${nome}, a soma dos seus gastos são: ${totalGastos}. E a média de seus gastos são: ${media}`);	
+	
+
+</script>
