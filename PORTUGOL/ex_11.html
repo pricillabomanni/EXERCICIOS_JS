@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+        //Declarar variável
+		//codigo do empregado, idade, tempo de trabalho, apto a trabalhar 
+		var anoNascimento, anoAdmissao, codigo, anoAtual = 2020, idade, tempoTrabalho;
+		
+
+		//Atribuir valor à variáveis
+		codigo = parseInt(prompt("Qual é o seu codigo de funcionário? "));
+		anoNascimento = parseInt(prompt("Qual é a sua data de nascimento? "));
+		anoAdmissao = parseInt(prompt("Em que ano você foi admitido? "));
+        
+        
+		//Processamento
+		idade = anoAtual - anoNascimento; 
+		tempoTrabalho = anoAtual - anoAdmissao;
+
+		if (idade >= 65) 
+		{
+			console.log("Você pode requerer sua aposentadoria, pois sua idade é: " + idade + " e seu tempo de trabalho é: " + tempoTrabalho);
+		}
+		else
+		{
+			if (tempoTrabalho >= 30)
+			{
+				console.log("Você pode requerer sua aposentadoria, pois sua idade é: " + idade + " e seu tempo de trabalho é: " + tempoTrabalho); 
+			}
+			else
+			{ 
+				if (idade >= 60 && tempoTrabalho >= 25)
+				{ 
+					console.log("Você pode requerer sua aposentadoria, pois sua idade é: " + idade + " e seu tempo de trabalho é: " + tempoTrabalho);
+				}
+				else
+				{
+					console.log ("Você não pode requerer sua aposentadoria, pois sua idade é: " + idade + " e seu tempo de trabalho é: " + tempoTrabalho);
+				}
+			}
+		}
+
+</script>

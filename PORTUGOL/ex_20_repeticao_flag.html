@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var continua, contador = 0, nome;
+
+    continua = prompt("Deseja continuar s/n? ");
+
+    while (continua == "s")
+    {
+        nome = prompt("Infore seu nome: ");
+        contador++;
+        //perguntar se quer contimuar
+        continua = prompt("Deseja continuar s/n? ");
+    }
+
+        alert("Pessoas cadastradas foram: " + contador);
+
+
+</script>

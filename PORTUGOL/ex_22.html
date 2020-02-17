@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+    var numeros = [];
+
+    for (var posicao= 0; posicao< 5; posicao++)
+    {
+        numeros[posicao] = prompt("Digite o número: " );
+        document.write(numeros[posicao]);
+        if (posicao <4)
+        {
+            document.write(", ");
+        }
+    }
+
+    document.write("<br>");
+     
+    for (var posicao= 4; posicao >=0; posicao--)
+    {
+        document.write(numeros[posicao]);
+        if (posicao >0)
+        {
+            document.write(", ");
+        }
+    }
+
+     
+        
+
+</script>

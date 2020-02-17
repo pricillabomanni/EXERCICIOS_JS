@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //Declarar variáveiss
+		var aluno, resultado, nota1, nota2, media; 
+
+		//Atribuir valores à variáveis
+		aluno = prompt("Digite seu nome: ");
+		nota1 = parseFloat(prompt("Digite sua 1º nota: "));
+		nota2 = parseFloat(prompt("Digite sua 2º nota: "));
+		
+
+		//Processamento
+        media = (nota1 + nota2) / 2;
+        Math.round (media)
+
+		if (media <= 5)
+		{
+			resultado = "Reprovado";
+		}
+		else
+		{
+			if (media > 5 && media < 7)
+				{
+					resultado = "Exame";		
+				}
+				else
+				{
+					resultado = "Aprovado";
+				}
+		}
+
+		//Saida
+		alert(aluno + ", sua média é: " + media + ", e você foi: " + resultado );
+
+</script>
