@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generation Ex_11Formulario</title>
+    <link rel="stylesheet" href="assets/css/estiloEx_11Formulario.css">
+
+</head>
+
+<body>
+
+    
+        <h1>Formulário</h1>
+    
+    <br><br>
+    <div id="caixa">
+        <form action="#" method="POST">
+
+            <!-- <label for="">nome: </label> -->
+            <input type="text" id="nome" maxlength="20" size="50" placeholder="Digite seu id aqui" required>
+
+            <br><br>
+
+            <label for="">Idade: </label>
+            <input type="number" id="idade" min="18" max="29">
+
+            <br><br>
+
+            <label for="">Nascimento: </label>
+            <input type="date" id="nascimento">
+
+            <br><br>
+
+            <label for="">Observação</label>
+            <textarea rows="4" cols="20" id="observacao" maxlength="500"></textarea>
+
+            <br><br>
+
+            <label for="">Estado: </label>
+            <select id="estado" >
+                <option value="" disabled selected>Selecione seu Estado</option>
+
+                <option value="SP">São Paulo</option>
+                <option value="PE">Pernambuco</option>
+                <option value="BA">Bahia</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="">Senha:</label>
+            <input type="password" id="senha" >
+
+            <br><br>
+
+            <label for="">Sexo: </label>
+            <br>
+            <input type="radio" name="sexo" value="F">
+            <label for="">Femenino</label>
+            <br>
+            <input type="radio" name="sexo" value="M">
+            <label for="">Masculino</label>
+            
+            <br><br>
+
+            <input type="checkbox" id="almoco"  >
+            <label for="">Almoço</label>
+            <br>
+            <input type="checkbox" id="transporte" >
+            <label for="">Transporte</label>
+
+            <br><br>
+
+            <!-- <footer> -->
+                <input type="submit" value="Enviar" onclick="mostrar()">
+                <input type="reset" value="Limpar Campos">
+
+            <!-- </footer> -->
+
+
+
+
+        </form>
+
+    </div>
+
+
+<script src="assets/js/ex_11Formulario.js"></script>
+</body>
+</html>
