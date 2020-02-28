@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <script >
+
+        // 1-FORMA: COM VARIOS VAR
+
+         var n = "12345"
+         var num1 = n.substring(4,5)
+         var num2 = n.substring(3,4)
+         var num3 = n.substring(2,3)
+         var num4 = n.substring(1,2)
+         var num5 = n.substring(0,1)       
+         document.write(num1 +  num2 + num3 + num4 + num5);
+
+         "\n"
+         "\n"
+
+          //2-FORMA: COM UM VAR
+
+         var n = "12345"
+         var reverso = n.substring(5,4) + n.substring(4,3) + n.substring(3,2) + n.substring(2,1) + n.substring(1,0)
+         alert(reverse);
+
+        "\n"
+        "\n"
+
+
+        // 3-FORMA: COM FUNÇÕES
+
+        var n = "7953"
+        var num = n.split('').reverse().join('--');
+        alert(num)
+
+        // função split: ele retira caracteres que estão entre as aspas e transforma uma string em um array.
+        // função reverse: ele inverte um array.
+        // função join: ele transforma um array em string.
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

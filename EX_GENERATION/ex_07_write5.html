@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // split(" ")  - transforma string em vetor e a cada espaço dentro do split ele entende onde começa e termina os vetores a partir dos espaços
+
+        var frase = "eu quero estudar muito até dominar essa bagaça!"
+        var resultado = ""
+        var vetor = frase.split(" ")
+        alert(vetor)
+
+        for (var i = 0; i < vetor.length; i++) {
+
+            //raplace é o (valor atual, novo valor)
+            //valor atual = vetor[i].slice(0,1)  ---> e
+            //novo valor =  vetor[i].slice(0,1).toUpperCase()  ----> E
+            //função slice - retira a cadeia de caracteres de acordo com a posiçao mencionada nos parenteses
+            //slice (a partir de onde, até o ponto de parada)
+
+            vetor[i] = vetor[i].replace(vetor[i].slice(0, 1), vetor[i].slice(0, 1).toUpperCase())
+
+            resultado = resultado + " " + vetor[i]
+
+            //resultado = resutado + " " + vetor[i]  ---> é para colocar todas as palavras no mesmo alert, independente do tamanho da frase. Ele primeiro vai pegar todas a palavras transformadas e depois para para o resultado que recebeu toda a atribuição que está no alert.                 
+        }
+
+        alert(resultado)
+
+
+
+    </script>
+
+
+</body>
+
+</html>

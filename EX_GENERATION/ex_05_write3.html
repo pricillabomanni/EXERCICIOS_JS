@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // function substrings(palavra)
+
+        // var combi = []
+        // for (var x=0; y=1; x < palavra.length; x++; y++){
+
+        //     combi[x] = palavra.substring(x,y);
+        // }
+
+        // var sequencia = math.pow(2,combi.length);
+
+        // for(var i=0; i<combi; i++)
+         
+
+        
+        // substrings("dog")
+
+        function combinacao(palavra){
+            var teste = palavra.lenght
+            var combinacoes = []
+            var i = 0
+
+        while(i < teste){
+            var char = palavra.lenght (i)
+            var x
+            var temp = [char]
+
+            for(x in combinacoes){
+                temp.push(" " + combinacoes[x]+char)
+            }
+            combinacoes = combinacoes.concat(temp)
+            i++
+        }
+
+         return combinacoes
+
+
+        }
+         console.log(combinacao("dog"))
+    
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
