@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+
+        // // exercicio tipico para usar uma função e não ter todo esse trabalho abaixo:
+        // // sem uso de função abaixo:
+
+        // //entrada1.
+        // var lado1 = 5
+        // var lado2 = 3
+        // var lado3 = 1
+
+        // //processamento1 - calculando a media dos lados.
+        // var s1 = (lado1 + lado2 + lado3) / 3
+
+        // // entrada2
+        // var lado4 = 3
+        // var lado5 = 10
+        // var lado6 = 7
+
+        // // processamento2 - calculando a media dos lados.
+        // var s2 = (lado4 + lado5 + lado6) / 3
+
+        // // entrada3.
+        // var lado7 = 13
+        // var lado8 = 2
+        // var lado9 = 6
+
+        // // processamento3 - calculando a media dos lados.
+        // var s3 = (lado7 + lado8 + lado9) / 3
+
+        // // saidas: 
+        // alert("s1 = " + s1)
+        // alert("s2 = " + s2)
+        // alert("s3 = " + s3)
+
+
+
+        // Mesmo codigo anterior com o uso da função
+
+        function calculaMedia(lado1, lado2, lado3){
+
+            var s = (lado1 + lado2 + lado3)/3
+            // alert(s)
+            return s
+        }
+        
+        var a = parseFloat(prompt("Digite um número: "))
+        var b = parseFloat(prompt("Digite um número: "))
+        var c = parseFloat(prompt("Digite um número: "))
+
+        // invocando (chamando) a função e enviando argumentos (parâmetros)
+        
+        var resultado = calculaMedia(a, b, c)
+        alert ("a média é: " + resultado)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

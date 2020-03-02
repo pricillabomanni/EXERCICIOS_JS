@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        try {
+
+            function notaFinal(n1, n2, n3, n4, n5) {
+                var media4 = (n1 + n2 + n3 + n4) / 4
+                var media5 = (n1 + n2 + n3 + n4 + n5) / 5     
+                var notaFinal = [media4, media5]   
+                return notaFinal
+            }
+
+            var n1 = parseInt(prompt("Digite sua 1º nota: "))
+            var n2 = parseInt(prompt("Digite sua 2º nota: "))
+            var n3 = parseInt(prompt("Digite sua 3º nota: "))
+            var n4 = parseInt(prompt("Digite sua 4º nota: "))
+            var n5 = parseInt(prompt("Digite sua 5º nota: "))
+
+            
+            var media4 = notaFinal(n1, n2, n3, n4)[0]
+            var media5 = notaFinal(n1, n2, n3, n4, n5)[1]
+
+            alert ("Média com 4 notas: " + media4)
+            alert ("Média com 5 notas: " + media5)
+
+        }
+
+        catch (erro){
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

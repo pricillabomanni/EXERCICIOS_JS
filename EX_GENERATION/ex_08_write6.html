@@ -12,14 +12,25 @@
 
     <script>
 
-        var frase = "não sei quais são as palavras deveramente gigantesca entre paralelepipedo ou inconstitucionalidade ou desprofissionalização"
-        var vetor = frase[]
+        // Entrada        
+        var frase = prompt("Digite algo: ")
 
-        for (var i = 0; i < vetor.length; i++) {
+        // Processamento
+        var vetor = frase.split(" ") 
+        var maior = vetor[0]
+        
+    
 
+        for (var i = 1; i < vetor.length; i++) {
+
+            if(maior.length < vetor[i].length){
+                maior = vetor[i]
+            }
+            
         }
-           
-        alert(vetor)
+        
+        // Saida
+       alert("A maior palara é: " + maior + ` com ${maior.length} letras.`)
 
 
 
