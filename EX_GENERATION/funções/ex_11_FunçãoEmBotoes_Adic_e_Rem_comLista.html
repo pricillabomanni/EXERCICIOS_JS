@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        li {
+            color: blue;
+        }
+
+        #adicionar{
+            background-color: green;
+        }
+
+        #remover{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <ul id="grupo">
+        <li class="item">Item</li>
+        <li class="item">Item</li>
+    </ul>
+
+    <button autofocus id="adicionar" onclick ="adicionar()" title="click para adicionar item.">Adicionar</button>
+    
+    <button id="remover" onkeypress  keycode =  46 ="remover()">Remover</button>
+
+    <script>
+        var lista = 1
+       
+        function adicionar() {
+            var texto = prompt("Digite o item da sua lista: ")
+            var ul = document.getElementById("grupo")
+            var li = document.createElement("li")
+            li.className = "item"
+
+            li.appendChild(document.createTextNode(texto))
+            ul.appendChild(li)
+            
+        }
+
+        function remover(){
+            var ul = document.getElementById("grupo")
+            ul.innerHTML = "Lista removida"
+            lista = 1
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>
