@@ -17,7 +17,13 @@
 
   <style>
     .large_button {
-      padding: 15px;
+      width: 45px;
+      height: 45px;
+    }
+
+    .pri_button{      
+      width: 45px;
+      height: 45px;
     }
   </style>
 
@@ -27,6 +33,17 @@
     <br />
     <div style="width: 200px;" class="alert alert-info" role="alert" id="result">0</div>
     <div class="container">
+      
+      <button id="botaocos" type="button" onclick="onCosenoCliked()"
+        class="btn btn-primary pri_button">cos</button>
+        <button id="botaosen" type="button" onclick="onSenoCliked()"
+        class="btn btn-primary pri_button">sen</button>
+        <button id="botaoraiz" type="button" onclick="onRaizQuadradaCliked()"
+        class="btn btn-primary pri_button">raiz</button>
+        <button id="botaopotencia" type="button" onclick="onPotenciaCliked()"
+        class="btn btn-primary pri_button">!*</button>
+
+        <br><br>
       <button id="num7" type="button" onclick="onNumberClicked(this)" class="btn btn-primary large_button">7</button>
       <button id="num8" type="button" onclick="onNumberClicked(this)" class="btn btn-primary large_button">8</button>
       <button id="num9" type="button" onclick="onNumberClicked(this)" class="btn btn-primary large_button">9</button>
@@ -54,7 +71,7 @@
       <button id="botaoLimpa" type="button" onclick="onClearClicked()" class="btn btn-primary large_button">C</button>
       <button id="botaoIgual" type="button" onclick="onEqualsClicked()" class="btn btn-primary large_button">=</button>
       <button id="botaoDivide" type="button" onclick="onDivideClicked()" class="btn btn-primary large_button">/</button>
-      <button id="botaoraiz" type="button" onclick="onRootClicked()" class="btn btn-primary large_button">/</button>
+      
 
     </div>
 
