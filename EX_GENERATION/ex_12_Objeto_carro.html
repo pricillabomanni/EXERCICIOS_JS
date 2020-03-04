@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+     
+
+            function Carro(_marca, _anoDeFabricacao, _velocidadeMaxima, _velocidadeAtual){
+
+                this.marca = _marca;
+                this.anoDeFabricacao = _anoDeFabricacao;
+                this.velocidadeMaxima = parseInt(_velocidadeMaxima);
+                this.velocidadeAtual = parseInt(_velocidadeAtual);
+               
+            }
+
+
+
+            meuCarro = new Carro("Ferrari", "2020","300", "0")
+
+            Carro.prototype.acelerar = function ()
+            {                                     
+                for(this.velocidadeAtual = 0; this.velocidadeAtual<=this.velocidadeMaxima; this.velocidadeAtual++){
+                    document.write(this.velocidadeAtual + "\n ")
+                }                                  
+                               
+            }
+
+            Carro.prototype.desacelerar =  function ()
+            {
+                for (this.velocidadeAtual= 300; this.velocidadeAtual >= 0 ; this.velocidadeAtual--){
+                    document.write(this.velocidadeAtual + " \n ")
+                }
+            }
+
+            
+
+            meuCarro.acelerar()
+            document.write("<br><br>")
+            meuCarro.desacelerar()
+
+        
+
+
+    </script>
+    
+</body>
+</html>
