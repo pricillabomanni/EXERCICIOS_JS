@@ -6,7 +6,7 @@ var operacao;
 
 function onNumberClicked(numberButton) {
 
-    if (result.innerHTML == "0") {
+    if (result.innerHTML == "") {
         result.innerHTML = numberButton.innerHTML;
     }
     else {
@@ -39,14 +39,14 @@ function onEqualsClicked() {
     }
 
     if (operacao == "!*") {
-        var fatorial =1
-        result.innerHTML = 
-        for(var i=0; i<n1; i++){
-            fatorial=fatorial*[i]
+        
+        for (var i = (n1-1); i >= 1; i--){            
+            n1 = n1*i
+            result.innerHTML = n1;            
         }
-
-        }
+    }
       
+
     if (operacao == "+") {
         result.innerHTML = n1 + n2
     }
