@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha(){
+		document.write("<br><br>")
+	}
+
+	function mostra(frase){
+		document.write(frase)
+		pulaLinha()
+	}
+
+	function calculaImc(peso, altura, pesoAmg, alturaAmg){
+
+		var imc1 = peso / (altura * altura)
+		var imc2 = pesoAmg / (alturaAmg * alturaAmg)
+		var somaImc = imc1 + imc2
+		mostra("O seu IMC calculado é: " + imc1 + "<br>O IMC do seu amigo é: " + imc2 + "<br>E a soma dos dois IMCs é: " +  somaImc)
+	}
+
+
+	var peso = prompt("Digite seu peso: ")
+	var altura = prompt("Digite sua altura: ")
+	var pesoAmg = prompt("Digite o peso do seu amigo: ")
+	var alturaAmg = prompt("Digite a altura do seu amigo: ")
+	calculaImc(peso, altura, pesoAmg, alturaAmg)
+
+</script>
