@@ -6,7 +6,7 @@ var operacao;
 
 function onNumberClicked(numberButton) {
 
-    if (result.innerHTML == "0") {
+    if (result.innerHTML == "") {
         result.innerHTML = numberButton.innerHTML;
     }
     else {
@@ -38,6 +38,7 @@ function onEqualsClicked() {
         result.innerHTML = Math.sqrt(n1)
     }
 
+<<<<<<< HEAD
     // if (operacao == "!*") {
     //     var fatorial =1
     //     result.innerHTML = 
@@ -46,7 +47,17 @@ function onEqualsClicked() {
     //     }
 
     //     }
+=======
+    if (operacao == "!*") {
+        
+        for (var i = (n1-1); i >= 1; i--){            
+            n1 = n1*i
+            result.innerHTML = n1;            
+        }
+    }
+>>>>>>> 0b93eed9e97d57d04bb27f0d6e307e95dd856b4d
       
+
     if (operacao == "+") {
         result.innerHTML = n1 + n2
     }
