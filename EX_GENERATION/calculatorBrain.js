@@ -38,14 +38,14 @@ function onEqualsClicked() {
         result.innerHTML = Math.sqrt(n1)
     }
 
-    if (operacao == "!*") {
-        var fatorial =1
-        result.innerHTML = 
-        for(var i=0; i<n1; i++){
-            fatorial=fatorial*[i]
-        }
+    // if (operacao == "!*") {
+    //     var fatorial =1
+    //     result.innerHTML = 
+    //     for(var i=0; i<n1; i++){
+    //         fatorial=fatorial*[i]
+    //     }
 
-        }
+    //     }
       
     if (operacao == "+") {
         result.innerHTML = n1 + n2
